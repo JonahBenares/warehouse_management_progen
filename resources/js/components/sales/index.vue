@@ -85,13 +85,14 @@ let requests=ref([]);
 								<table class="table table-actions table-hover mb-0">
 									<thead>
 										<tr>
-											<th scope="col" width="5%" class="text-center">#</th>
-											<th scope="col" width="10%">Date</th>
-											<th scope="col" width="15%">MReqF No.</th>
-											<th scope="col" width="12%">PR/JO No.</th>
-											<th scope="col" width="18%">Department</th>
-											<th scope="col" width="25%">Purpose</th>
-											<th scope="col" width="15%">End Use</th>
+											<th scope="col" width="10%">DR Date</th>
+											<th scope="col" width="10%">DR No.</th>
+											<th scope="col" width="12%">Buyer</th>
+											<th scope="col" width="12%">Address</th>
+											<th scope="col" width="12%">Shipped Via</th>
+											<th scope="col" width="15%">Waybill No</th>
+											<th scope="col" width="15%">Source PR</th>
+											<th scope="col" width="15%">PGC PR/PO No.</th>
 											<th scope="col" width="5%" class="text-center">Status</th>
 											<th scope="col" width="1%">
 												<div class="flex justify-center">
@@ -103,6 +104,7 @@ let requests=ref([]);
 									<tbody >
 										<tr>
 											<td align="center"></td>
+											<td></td>
 											<td></td>
 											<td></td>
 											<td></td>
