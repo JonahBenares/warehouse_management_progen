@@ -266,7 +266,7 @@ onMounted(async () => {
 											<th class="font-xxs" width="5%">Qty</th>
 											<!-- <th class="font-xxs" width="5%">Unit Cost</th>
 											<th class="font-xxs" width="5%">Shipping Cost</th> -->
-											<th class="font-xxs" width="5%">Total Cost</th>
+											<th class="font-xxs" width="5%">Unit Cost</th>
 											<th class="font-xxs" width="15%">Supplier</th>
 											<th class="font-xxs" width="5%">UOM</th>
 											<th class="font-xxs" width="7%">Cat. No.</th>
