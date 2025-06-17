@@ -364,12 +364,12 @@
 														<td class="text-xs align-top px-1" align="center">{{it.shipping_cost}}</td>
 														<td class="text-xs align-top px-1" align="center">{{it.unit_cost}} {{ (it.currency!=null) ? it.currency : '' }}</td>
 														<!-- <td class="text-xs align-top px-1" align="right">12</td> -->
-														<td class="text-xs align-top px-1 bg-yellow-50" align="center" >{{ (parseFloat(it.unit_cost) + parseFloat(it.shipping_cost)) *  it.bo_quantity}}</td>
+														<td class="text-xs align-top px-1 bg-yellow-50" align="center" >{{ ((parseFloat(it.unit_cost) + parseFloat(it.shipping_cost)) *  it.bo_quantity).toFixed(2)}}</td>
 													</tr>
 													
 													<tr>
-														<td class="text-xs" colspan='12' align='right'><span class="mx-1"><b>Total</b></span></td>
-														<td class="text-xs bg-yellow-200" colspan='1' align='center'><b>{{ qty }}</b></td>
+														<td class="text-xs" colspan='13' align='right'><span class="mx-1"><b>Total</b></span></td>
+														<td class="text-xs bg-yellow-200" colspan='1' align='center'><b>{{ parseFloat(qty).toFixed(2) }}</b></td>
 													</tr>
 												</table>
 											</td>

@@ -332,7 +332,7 @@
 													</td>
 													<td class="text-xs text-center align-middle p-0 px-2">{{ (parseFloat(it.shipping_cost) + parseFloat(it.unit_cost))}}</td>
 													<td class="text-xs text-center align-middle p-0 px-2">{{ (it.currency!=null) ? it.currency : '' }}</td>
-													<td class="text-xs text-center align-middle p-0 px-2">{{ (parseFloat(it.shipping_cost) + parseFloat(it.unit_cost)) * it.issue_qty}}</td>
+													<td class="text-xs text-center align-middle p-0 px-2">{{ ((parseFloat(it.shipping_cost) + parseFloat(it.unit_cost)) * it.issue_qty).toFixed(2)}}</td>
 													<td class="text-xs align-middle p-0 px-2" colspan="4">{{ it.supplier }}</td>
 													<td class="text-xs align-middle p-0 px-2" colspan="4">{{ it.item_description_display }}</td>
 													<td class="text-xs text-center">{{ it.item_status }}</td>

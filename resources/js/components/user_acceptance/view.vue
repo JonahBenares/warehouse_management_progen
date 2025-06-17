@@ -660,7 +660,7 @@
 												<span class="popuptext" :id="'myPopup'+it.id">{{ (it.eval_reason!=null) ? it.eval_reason : ''}}</span>
 											</div>
 										</td>
-										<td class="p-1 font-xxss text-center">{{ (parseFloat(it.unit_cost) + parseFloat(it.shipping_cost)) *  it.rec_quantity}}</td>
+										<td class="p-1 font-xxss text-center">{{ ((parseFloat(it.unit_cost) + parseFloat(it.shipping_cost)) *  it.rec_quantity).toFixed(2)}}</td>
 									</tr>
 									<tr class="">
 										<td class="font-xxs uppercase font-bold" width="15%">Brand</td>

@@ -335,12 +335,12 @@
 											<td v-if="det.explode_modes[index]!='deduct'" :class="(it.eval_flag!=0) ? (it.eval_flag==1) ? 'text-xs align-top px-1 py-1' : (it.eval_flag==2) ? 'text-xs align-top px-1 py-1' : '' : 'text-xs align-top px-1 py-1'" align="left">{{ it.shipping_cost }}</td>
 											<td v-if="det.explode_modes[index]!='deduct'" :class="(it.eval_flag!=0) ? (it.eval_flag==1) ? 'text-xs align-top px-1 py-1' : (it.eval_flag==2) ? 'text-xs align-top px-1 py-1' : '' : 'text-xs align-top px-1 py-1'" align="center">{{it.unit_cost}} {{ (it.currency!=null) ? it.currency : '' }}</td>
 											<!-- <td v-if="det.explode_modes[index]!='deduct'" :class="(it.eval_flag==1) ? 'text-xs align-top px-1 py-1' : (it.eval_flag==2) ? 'text-xs align-top px-1 py-1' : ''" align="right">12</td> -->
-											<td v-if="det.explode_modes[index]!='deduct'" :class="(it.eval_flag!=0) ? (it.eval_flag==1) ? 'text-xs align-top px-1 py-1' : (it.eval_flag==2) ? 'text-xs align-top px-1 py-1' : '' : 'text-xs align-top px-1 py-1'" align="center">{{ (parseFloat(it.unit_cost) + parseFloat(it.shipping_cost)) *  it.rec_quantity}}</td>
+											<td v-if="det.explode_modes[index]!='deduct'" :class="(it.eval_flag!=0) ? (it.eval_flag==1) ? 'text-xs align-top px-1 py-1' : (it.eval_flag==2) ? 'text-xs align-top px-1 py-1' : '' : 'text-xs align-top px-1 py-1'" align="center">{{ ((parseFloat(it.unit_cost) + parseFloat(it.shipping_cost)) *  it.rec_quantity).toFixed(2)}}</td>
 											
 										</tr>
 										<tr>
 											<td class="text-xs" colspan='14' align='right'><span class="mx-1"><b>Total</b></span></td>
-											<td class="text-xs bg-yellow-200" colspan='1' align='center'><b>{{ qty }}</b></td>
+											<td class="text-xs bg-yellow-200" colspan='1' align='center'><b>{{ parseFloat(qty).toFixed(2) }}</b></td>
 										</tr>
 									</table>
 									<table width="100%">

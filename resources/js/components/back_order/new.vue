@@ -339,7 +339,7 @@ let currency =ref([])
 												<option v-for="cur in currency" v-bind:key="cur" v-bind:value="cur">{{  cur }}</option>
 											</select>	
 										</td>
-										<td class="p-1 font-xxss font-bold text-center bg-green-200">{{ (it.bo_qty *  (parseFloat(it.unit_cost) + parseFloat(it.shipping_cost)))}}</td>
+										<td class="p-1 font-xxss font-bold text-center bg-green-200">{{ ((it.bo_qty *  (parseFloat(it.unit_cost) + parseFloat(it.shipping_cost)))).toFixed(2)}}</td>
 										<!-- <td class="p-0 font-xxss" v-else></td> -->
 										<td class="text-xs">{{ it.item_description }}</td>
 										<td class="text-xs">{{ it.supplier_name }}</td>
